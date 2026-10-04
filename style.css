@@ -863,3 +863,129 @@ header{
     grid-template-columns: 1fr;
   }
 }
+/* --- PAGE BOUTIQUE --- */
+
+/* Bannière d'en-tête */
+.shop-banner {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+}
+
+.shop-banner h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.shop-banner p {
+  color: #666666;
+  font-size: 1rem;
+}
+
+/* Structure globale (Sidebar + Grille produits) */
+.shop-container {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* --- BARRE LATÉRALE (FILTRES) --- */
+.shop-sidebar {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.filter-group {
+  margin-bottom: 30px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Liste des catégories */
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-list li {
+  margin-bottom: 10px;
+}
+
+.filter-list a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: block;
+}
+
+.filter-list a:hover,
+.filter-list a.active {
+  color: #111111;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+/* Select de tri */
+.sort-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.sort-select:focus {
+  border-color: #111111;
+}
+
+/* --- GRILLE DES PRODUITS DE LA BOUTIQUE --- */
+.shop-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* RESPONSIVE (Tablette et Mobile) */
+@media (max-width: 900px) {
+  .shop-container {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .shop-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
