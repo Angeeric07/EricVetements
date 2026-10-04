@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPTE</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+</head>
+<body>
+     <header>
+        <div class="nomSite">
+            <h1><span>ERIC</span> COLLECTION</h1>
+        </div>
+        <div class="categories">
+            <button type="button" class="categorie">Nouveautés</button>
+            <button type="button" class="categorie">Femme</button>
+            <button type="button" class="categorie">Homme</button>
+            <button type="button" class="categorie">Collection</button>
+            <button type="button" class="categorie">Offres</button>
+        </div>
+        <!-- Bouton / Barre de recherche -->
+        <div class="actions">
+            <div class="action-item">
+               <button type="button" class="icon-btn" aria-label="Rechercher">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               </button>
+         </div>
+         <!-- Lien Mon Compte -->
+            <div class="action-item">
+              <a href="compte.html" class="icon-btn" aria-label="Mon Compte">
+              <i class="fa-regular fa-user"></i>
+              </a>
+          </div>
+          <!-- Lien Panier avec badge de compteur -->
+          <div class="action-item">
+            <a href="panier.html" class="icon-btn cart-btn" aria-label="Panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <!-- Badge pour afficher le nombre d'articles dans le panier -->
+              <span class="cart-count">0</span>
+              </a>
+            </div>
+        </div>
+    </header>
+    <main class="account-container">
+    <div class="account-card">
+        
+        <!-- Onglets -->
+        <div class="account-tabs">
+            <button type="button" class="tab-btn active">Se connecter</button>
+            <button type="button" class="tab-btn">S'inscrire</button>
+        </div>
+
+        <!-- FORMULAIRE 1 : CONNEXION -->
+        <form class="account-form" id="login-form">
+            <h2>Bienvenue</h2>
+            <p class="form-subtitle">Connectez-vous pour accéder à vos commandes.</p>
+
+            <div class="input-group">
+                <label for="login-email">Adresse e-mail</label>
+                <input type="email" id="login-email" placeholder="votre.email@exemple.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="login-password">Mot de passe</label>
+                <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-actions">
+                <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Se connecter</button>
+        </form>
+
+        <!-- FORMULAIRE 2 : INSCRIPTION (masqué au départ) -->
+        <form class="account-form hidden" id="register-form">
+            <h2>Créer un compte</h2>
+            <p class="form-subtitle">Rejoignez ERIC COLLECTION pour suivre vos commandes.</p>
+
+            <div class="input-group">
+                <label for="register-name">Nom complet</label>
+                <input type="text" id="register-name" placeholder="Ex: Eric Kouassi" required>
+            </div>
+
+            <div class="input-group">
+                <label for="register-email">Adresse e-mail</label>
+                <input type="email" id="register-email" placeholder="votre.email@exemple.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="register-password">Mot de passe</label>
+                <input type="password" id="register-password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="submit-btn">S'inscrire</button>
+        </form>
+
+    </div>
+</main>
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <!-- Colonne 1 : À propos -->
+        <div class="footer-col">
+            <h3 class="footer-logo">ERIC COLLECTION</h3>
+            <p class="footer-desc">
+                Votre destination mode pour des vêtements de qualité, tendance et intemporels.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Colonne 2 : Liens rapides -->
+        <div class="footer-col">
+            <h4>Boutique</h4>
+            <ul>
+                <li><a href="#">Nouveautés</a></li>
+                <li><a href="#">Homme</a></li>
+                <li><a href="#">Femme</a></li>
+                <li><a href="#">Accessoires</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 3 : Aide & Contact -->
+        <div class="footer-col">
+            <h4>Aide</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Livraisons & Retours</a></li>
+                <li><a href="#">Guide des tailles</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 4 : Newsletter -->
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Abonnez-vous pour recevoir nos offres exclusives.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+                <input type="email" placeholder="Votre e-mail" required>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar (Copyright & Paiements) -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 ERIC COLLECTION. Tous droits réservés.</p>
+        <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
