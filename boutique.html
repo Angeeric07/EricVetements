@@ -8,7 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<header>
+        <div class="nomSite">
+            <a href="index.html" class="logo logo-badge">
+            <span class="logo-mark">EC</span>
+            <span class="logo-text">ERIC COLLECTION</span>
+           </a>
+        </div>
+        <div class="categories">
+            <button type="button" class="categorie">Nouveautés</button>
+            <button type="button" class="categorie">Femme</button>
+            <button type="button" class="categorie">Homme</button>
+            <button type="button" class="categorie">Collection</button>
+            <button type="button" class="categorie">Offres</button>
+        </div>
+        <!-- Bouton / Barre de recherche -->
+        <div class="actions">
+            <div class="action-item">
+              <a href="index.html" class="icon-btn" aria-label="Rechercher">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               </a> 
+               </button>
+         </div>
+         <!-- Lien Mon Compte -->
+            <div class="action-item">
+              <a href="compte.html" class="icon-btn" aria-label="Mon Compte">
+              <i class="fa-regular fa-user"></i>
+              </a>
 
+          </div>
+          <div class="action-item">
+            <a href="boutique.html" class="icon-btn" aria-label="Boutique" title="Boutique">
+                <i class="fa-solid fa-store"></i>
+            </a>
+          </div>
+          <!-- Lien Panier avec badge de compteur -->
+          <div class="action-item">
+            <a href="panier.html" class="icon-btn cart-btn" aria-label="Panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <!-- Badge pour afficher le nombre d'articles dans le panier -->
+              <span class="cart-count">0</span>
+              </a>
+            </div>
+        </div>
+    </header>
     <!-- BANNIÈRE EN-TÊTE DE LA BOUTIQUE -->
     <section class="shop-banner">
         <h1>Tous nos produits</h1>
@@ -50,6 +93,70 @@
         </section>
 
     </main>
+     <footer class="main-footer">
+    <div class="footer-container">
+        
+        <!-- Colonne 1 : À propos -->
+        <div class="footer-col">
+            <h3 class="footer-logo">ERIC COLLECTION</h3>
+            <p class="footer-desc">
+                Votre destination mode pour des vêtements de qualité, tendance et intemporels.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Colonne 2 : Liens rapides -->
+        <div class="footer-col">
+            <h4>Boutique</h4>
+            <ul>
+                <li><a href="boutique.html">Nouveautés</a></li>
+                <li><a href="boutique.html">Homme</a></li>
+                <li><a href="boutique.html">Femme</a></li>
+                <li><a href="boutique.html">Accessoires</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 3 : Aide & Contact -->
+        <div class="footer-col">
+            <h4>Aide</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Livraisons & Retours</a></li>
+                <li><a href="#">Guide des tailles</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 4 : Newsletter -->
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Abonnez-vous pour recevoir nos offres exclusives.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+                <input type="email" placeholder="Votre e-mail" required>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar (Copyright & Paiements) -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 ERIC COLLECTION. Tous droits réservés.</p>
+        <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
 
     <!-- Fichier JavaScript (à conserver pour plus tard) -->
     <script src="script.js"></script>

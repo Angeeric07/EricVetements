@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+     <header>
+        <div class="nomSite">
+             <a href="index.html" class="logo logo-badge">
+            <span class="logo-mark">EC</span>
+            <span class="logo-text">ERIC COLLECTION</span>
+           </a>
+        </div>
+        </div>
+        <div class="categories">
+            <a href="boutique.html" class="categorie">Nouveautés</a>
+            <a href="boutique.html" class="categorie">Femme</a>
+            <a href="boutique.html" class="categorie">Homme</a>
+            <a href="boutique.html" class="categorie">Collection</a>
+            <a href="boutique.html" class="categorie">Offres</a>
+        </div>
+        <!-- Bouton / Barre de recherche -->
+        <div class="actions">
+            <div class="action-item">
+              <a href="index.html" class="icon-btn" aria-label="Rechercher">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               </a>
+         </div>
+         <!-- Lien Mon Compte -->
+            <div class="action-item">
+              <a href="compte.html" class="icon-btn" aria-label="Mon Compte">
+              <i class="fa-regular fa-user"></i>
+              </a>
+          </div>
+          <div class="action-item">
+            <a href="boutique.html" class="icon-btn" aria-label="Boutique" title="Boutique">
+                <i class="fa-solid fa-store"></i>
+            </a>
+           </div>
+          <!-- Lien Panier avec badge de compteur -->
+          <div class="action-item">
+            <a href="panier.html" class="icon-btn cart-btn" aria-label="Panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <!-- Badge pour afficher le nombre d'articles dans le panier -->
+              <span class="cart-count">0</span>
+              </a>
+            </div>
+        </div>
+    </header>
+    <main class="product-detail-container">
+        
+        <!-- Fil d'Ariane (Retour rapide) -->
+        <nav class="breadcrumb">
+            <a href="index.html">Accueil</a> / 
+            <a href="boutique.html">Boutique</a> / 
+            <span>Veste en Jean Vintage</span>
+        </nav>
+
+        <div class="product-detail-grid">
+            
+            <!-- COLONNE GAUCHE : GALERIE D'IMAGES -->
+            <div class="product-gallery">
+                <div class="main-image-box">
+                    <img id="main-product-img" src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" alt="Veste en Jean Vintage">
+                </div>
+                <div class="thumbnail-row">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=200&q=80" alt="Vue 1" class="thumb active">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=200&q=80" alt="Vue 2" class="thumb">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=200&q=80" alt="Vue 3" class="thumb">
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE : INFORMATIONS & OPTIONS -->
+            <div class="product-detail-info">
+                <span class="detail-category">Vestes</span>
+                <h1 class="detail-title">Veste en Jean Vintage</h1>
+                <p class="detail-price">45.00 €</p>
+
+                <p class="detail-description">
+                    Une veste en jean coupe droite au style intemporel. Confectionnée dans un coton épais et résistant pour un confort optimal au quotidien. Idéale en mi-saison.
+                </p>
+
+                <!-- Sélection de la taille -->
+                <div class="option-group">
+                    <label>Taille :</label>
+                    <div class="size-selector">
+                        <button type="button" class="size-btn">S</button>
+                        <button type="button" class="size-btn active">M</button>
+                        <button type="button" class="size-btn">L</button>
+                        <button type="button" class="size-btn">XL</button>
+                    </div>
+                </div>
+
+                <!-- Quantité + Bouton Ajouter au panier -->
+                <div class="purchase-actions">
+                    <div class="quantity-box">
+                        <button type="button" class="qty-btn">-</button>
+                        <span class="qty-value">1</span>
+                        <button type="button" class="qty-btn">+</button>
+                    </div>
+
+                    <button type="button" class="add-to-cart-main">
+                        <i class="fa-solid fa-bag-shopping"></i> Ajouter au panier
+                    </button>
+                </div>
+
+                <!-- Infos supplémentaires -->
+                <ul class="product-perks">
+                    <li><i class="fa-solid fa-truck-fast"></i> Livraison rapide sous 24h à 48h</li>
+                    <li><i class="fa-solid fa-rotate-left"></i> Retours gratuits sous 14 jours</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> Paiement 100 % sécurisé</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+     <footer class="main-footer">
+    <div class="footer-container">
+        
+        <!-- Colonne 1 : À propos -->
+        <div class="footer-col">
+            <h3 class="footer-logo">ERIC COLLECTION</h3>
+            <p class="footer-desc">
+                Votre destination mode pour des vêtements de qualité, tendance et intemporels.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Colonne 2 : Liens rapides -->
+        <div class="footer-col">
+            <h4>Boutique</h4>
+            <ul>
+                 <li><a href="boutique.html">Nouveautés</a></li>
+                 <li><a href="boutique.html">Homme</a></li>
+                 <li><a href="boutique.html">Femme</a></li>
+                 <li><a href="boutique.html">Accessoires</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 3 : Aide & Contact -->
+        <div class="footer-col">
+            <h4>Aide</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Livraisons & Retours</a></li>
+                <li><a href="#">Guide des tailles</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 4 : Newsletter -->
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Abonnez-vous pour recevoir nos offres exclusives.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+                <input type="email" placeholder="Votre e-mail" required>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar (Copyright & Paiements) -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 ERIC COLLECTION. Tous droits réservés.</p>
+        <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
